@@ -20,17 +20,19 @@ define(function (require) {
         console.log("index.html");
         var filename = require.toUrl(selection);
         console.log("ToURL is " + filename);
-        var document = DocumentManager.getDocumentForPath(filename)
-        .then((value) => {
+        var file = FileSystem.getFileForPath(filename);
+        console.log(file);
+        DocumentManager.getDocumentForPath(filename, file)
+            .then(function (value) {
+                console.log("Value is " + value);
+            });
+        /*document.then = function (value) {
+            console.log("We get here");
             console.log("Value is " + value);
-            console.log("The document is " + document);
-            EditorManager.openDocument(document);  
-            return;
-        })
-        .catch((err) => {
-            console.log("There is an error");
-        });
-        
+            //EditorManager.openDocument(document);  
+            //return;
+        };*/
+        console.log("WTF");
     }
     
     
