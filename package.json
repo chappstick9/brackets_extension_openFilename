@@ -1,0 +1,19 @@
+{
+    "name": "JohnKrieg.FullPathAlert",
+    "title": "FULL PATH ALERT",
+    "description": "Provides the full path of the highlighted filename via alert.",
+    "homepage": "",
+    "version": "1.0.0",
+    "author": "",
+    "license": "",
+    "engines": {
+        "brackets": ">=0.24.0"
+    },
+    "i18n": [ "en", "fr"],
+    "package-i18n": {
+        "fr": {
+            "description": ""
+        }
+    }
+}
+i}
